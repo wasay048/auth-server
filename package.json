@@ -4,8 +4,8 @@
   "description": "A backend server for user authentication and management using MongoDB and TypeScript.",
   "main": "src/app.ts",
   "scripts": {
-    "start": "ts-node src/app.ts",
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "start": "node init && ts-node src/app.ts",
+    "dev": "node init && ts-node-dev --respawn --transpile-only src/app.ts"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -19,7 +19,8 @@
     "helmet": "^8.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.23",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
